@@ -106,6 +106,3 @@ doc-skills/
 - `req.md` - 需求文档模板
 - `design.md` - 设计文档模板
 
-## 📜 License
-
-MIT
