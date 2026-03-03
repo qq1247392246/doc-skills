@@ -23,16 +23,21 @@ cd doc-skills
 **Claude Code 用户：**
 
 ```bash
+# 技能文件
 mkdir -p ~/.claude/skills/doc
-cp skill.md ~/.claude/skills/doc/
+cp SKILL.md ~/.claude/skills/doc/
 cp -r templates ~/.claude/skills/doc/
+
+# 命令提示文件
+mkdir -p ~/.claude/commands/doc
+cp commands/doc/*.md ~/.claude/commands/doc/
 ```
 
 **Codex 用户：**
 
 ```bash
 mkdir -p ~/.codex/instructions/doc
-cp skill.md ~/.codex/instructions/doc/
+cp SKILL.md ~/.codex/instructions/doc/
 cp -r templates ~/.codex/instructions/doc/
 ```
 
@@ -91,14 +96,19 @@ AI:  已生成设计文档，可以开始实现了
 
 ```
 doc-skills/
-├── skill.md          # ⭐ 核心技能文件
+├── SKILL.md          # ⭐ 核心技能文件
+├── commands/         # 命令提示定义
+│   └── doc/
+│       ├── list.md
+│       ├── open.md
+│       └── del.md
 ├── templates/        # 文档模板
 │   ├── req.md
 │   └── design.md
 └── README.md         # 本文件
 ```
 
-只需复制 `skill.md` 和 `templates/` 到 Claude/Codex 配置目录即可使用。
+需复制 `SKILL.md`、`templates/` 和 `commands/` 到 Claude/Codex 配置目录即可使用。
 
 ## 📝 模板自定义
 

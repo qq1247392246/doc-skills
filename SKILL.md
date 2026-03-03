@@ -1,3 +1,8 @@
+---
+name: doc
+description: DOC Skills - 面向文档编程辅助工具。支持 /doc 命令创建需求文档，/doc list 列出主题，/doc open 切换主题，/doc del 删除主题。
+---
+
 # DOC Skills - 面向文档编程
 
 ## 触发条件（B+C 混合）
